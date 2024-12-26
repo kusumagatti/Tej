@@ -1,0 +1,17 @@
+package com.sathya.springbootmvc.product.model;
+
+import lombok.Builder;
+import lombok.ToString;
+
+@Builder
+@ToString
+public class ProductModel {
+ 
+	private String name;
+	private String brand;
+	private String madeIn;
+	private double price;
+	private int quantity;
+	private int discountRate;
+
+}

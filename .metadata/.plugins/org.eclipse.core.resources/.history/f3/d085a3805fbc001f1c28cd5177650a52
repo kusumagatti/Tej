@@ -1,0 +1,15 @@
+package com.sathya.springbootmvc.model;
+
+import lombok.Builder;
+import lombok.ToString;
+
+@Builder
+@ToString
+public class Employee {
+
+	int empId;
+	String empName;
+	double empSalary;
+		
+	}
+}

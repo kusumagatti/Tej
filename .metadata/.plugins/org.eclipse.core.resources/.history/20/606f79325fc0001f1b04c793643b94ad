@@ -1,0 +1,5 @@
+package com.sathya.springbootmvc.employee.entity;
+
+public class EmployeeEntity {
+
+}

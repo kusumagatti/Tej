@@ -1,0 +1,29 @@
+package com.sathya.springbootmvc.product.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.sathya.springbootmvc.product.model.ProductModel;
+import com.sathya.springbootmvc.product.service.ProductService;
+
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+
+@Controller
+public class ProductModelController {
+
+@GetMapping("productform")
+public String getMethodName() {
+    return "add-product";
+}
+@PostMapping("/saveemployee")
+public String postEmployee(ProductModel productModel) {
+     
+	ProductService.saveProductDetails(productModel);
+    return "success";
+}
+
+}
